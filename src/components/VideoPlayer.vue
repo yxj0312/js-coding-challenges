@@ -1,14 +1,22 @@
 <template>
-    <div>123</div>
+    <div class="video-container">
+        <player class="video-player" :source="this.current"></player>
+        <thumbnails :movies="this.movies" class="video-choices" v-on:choose-movie="handleChangeCurrent"></thumbnails>
+    </div>
 </template>
 
 <script>
 import axios from 'axios';
+import player from './_Player';
+import thumbnails from './_Thumbnails';
 
     export default {
         props: [],
 
-        components: {},
+        components: {
+            player,
+            thumbnails
+        },
 
         data() {
             return {
@@ -31,7 +39,24 @@ import axios from 'axios';
         },
 
         methods: {
-            
+            handleChangeCurrent(movie) {
+                this.current = movie
+            }
         }
     }
 </script>
+
+<style lang="scss">
+
+.video-choices  {
+  display: flex;
+  
+  :not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  img {
+    height: 100px;
+  }  
+}
+</style>
