@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <form @submit.prevent="search">
+    <div class="page">
+        <form @submit.prevent="search" class="search-form">
             <input 
                 type="text"
                 class="input"
@@ -12,8 +12,8 @@
             </button>
         </form>
         <div class="hero">
-            <div v-if="images">
-                <div v-for="(image, index) in images" :key="`image ${index}`">
+            <div v-if="images" class="hero__container">
+                <div v-for="(image, index) in images" :key="`image ${index}`" class="hero__image">
                     <img :src="image.previewURL" alt="">
                 </div>
             </div>
@@ -40,9 +40,6 @@ import axios from 'axios';
         },
 
         computed: {
-            searchQuery() {
-                return encodeURIComponent(this.query)
-            }
         },
 
         methods: {
@@ -61,8 +58,40 @@ import axios from 'axios';
                                this.isSearching = false; 
                             }
                         })
+                } else {
+                    this.images = [];
+                    this.isSearching = false;
                 }
+                
             }
         }
     }
 </script>
+
+<style>
+.page {
+    height: 100%;
+    height: 100vh;
+    background:burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hero__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 72px;
+    padding: 0 165px;
+}
+
+.hero__image {
+    margin: 0;
+    flex: 0 1 155px;
+}
+
+</style>
