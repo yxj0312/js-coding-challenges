@@ -1,19 +1,11 @@
 <template>
   <div id="app">
-    <video-player></video-player>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import VideoPlayer from './components/VideoPlayer.vue'
-
 export default {
   name: 'app',
-  components: {
-    VideoPlayer
-  }
 }
 </script>
-
-<style>
-</style>
