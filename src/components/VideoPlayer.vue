@@ -48,6 +48,21 @@ import thumbnails from './_Thumbnails';
 
 <style lang="scss">
 
+.videos-container {
+  background: #333;
+  padding: 10px;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+
+.video-player   {
+  min-height: 300px;
+  width: 100%;
+  background: #000;
+  margin-bottom: 10px;
+}
+
+
 .video-choices  {
   display: flex;
   
