@@ -1,16 +1,23 @@
 <template>
     <div>
-        <form action="">
+        <form @submit.prevent="search">
             <input 
                 type="text"
                 class="input"
                 placeholder="What images would you like to see on Pixabay?"
                 v-model="query">
-            <button 
-                @click="search"
+            <button
+                type="submit"
             >{{ isSearching ? 'Searching' : 'Search' }}
             </button>
         </form>
+        <div class="hero">
+            <div v-if="images">
+                <div v-for="(image, index) in images" :key="`image ${index}`">
+                    <img :src="image.previewURL" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -33,7 +40,9 @@ import axios from 'axios';
         },
 
         computed: {
-            
+            searchQuery() {
+                return encodeURIComponent(this.query)
+            }
         },
 
         methods: {
@@ -42,7 +51,7 @@ import axios from 'axios';
                     this.images = [];
                     this.isSearching = true;
                     const searchQuery = encodeURIComponent(this.query);
-
+                    
                     axios.get(`${this.apiUrl}/?key=${this.apiKey}&q=${searchQuery}s&image_type=photo&per_page=15&safesearch=true`)
                         .then(res => {
                             if (res.data.total != 0) {
