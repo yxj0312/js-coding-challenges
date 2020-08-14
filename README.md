@@ -32,3 +32,29 @@
 ### Bonus #8
 
 These images once fetched are displayed in a collage, however, as a bonus, try to display a single image once clicked, either as a modal, popup or new page, however you like it!
+
+## Code Challenges #11 - JavaScript Functional Programming
+
+Three arrays are provided and each comes with 3 problem parts to be solved. In the first array:
+
+Part 1 - Find all users older than 24
+
+Part 2 - Find the total age of all users
+
+Part 3 - List all female coders
+
+In the second array:
+
+Part 1 - List all users in the US in ascending order
+
+Part 2 - Sort all users by age
+
+Part 3 - List all female coders
+
+In the third array:
+
+Part 1 - Find the total age of male coders under 25
+
+Part 2 - List all male coders over 30
+
+Part 3 - Find the total age of everyone in texasss, newieyork and vegzas combined.
