@@ -17,7 +17,7 @@
         <div class="hero-area" :class="{'hero-area--has-no-searched':images && images.length === 0}">
             <div v-if="images" class="hero__container">
                 <div v-for="(image, index) in images" :key="`image ${index}`" class="hero__image">
-                    <img :src="image.previewURL" alt="">
+                    <image-component :previewURL="image.previewURL" :largeImageURL="image.largeImageURL"></image-component>
                 </div>
             </div>
         </div>
@@ -26,11 +26,14 @@
 
 <script>
 import axios from 'axios';
+import imageComponent from './_ImageComponent';
 
     export default {
         props: [],
 
-        components: {},
+        components: {
+            imageComponent
+        },
 
         data() {
             return {
@@ -38,7 +41,7 @@ import axios from 'axios';
                 apiKey: '8653965-67fc8570b61c58e735d9adade',
                 images: null,
                 isSearching: false,
-                query: ''
+                query: '',
             }
         },
 
