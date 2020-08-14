@@ -1,5 +1,6 @@
 import VideoPlayer from './components/VideoPlayer'
 import AnimatedImageSearch from './components/AnimatedImageSearch'
+import ArrayAlgoChallenge from './components/ArrayAlgoChallenge'
 
 export default {
     mode: 'history',
@@ -13,6 +14,11 @@ export default {
         {
             path: '/challenge-8',
             component: AnimatedImageSearch
+        },
+
+        {
+            path: '/challenge-11',
+            component: ArrayAlgoChallenge
         },
     ]
 }
