@@ -1,7 +1,10 @@
 <template>
     <div class="image-component">
-        <img class="original-image" :src="previewURL" alt="" @mouseover="hover = true" @mouseleave="hover = false">
-        <img :src="largeImageURL" alt="" class="big-image" v-if="hover">
+        <!-- <img class="original-image" :src="previewURL" alt="" @mouseover="hover = true" @mouseleave="hover = false"> -->
+        <img class="original-image" :src="previewURL" alt="" @click="open = !open">
+        <div v-if="open">
+            <img :src="largeImageURL" alt="" class="big-image" @click="open =!open">
+        </div>
     </div>
 </template>
 
@@ -13,7 +16,8 @@
 
         data() {
             return {
-                hover: false
+                hover: false,
+                open: false
             }
         },
 
@@ -46,7 +50,7 @@
         top: 0%;
         left: 0%;
         width: 100%;
-        z-index: 2;
+        z-index: 1;
         transition: all 1s ease-in-out;
     }
 </style>

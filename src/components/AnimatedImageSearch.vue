@@ -80,6 +80,7 @@ import imageComponent from './_ImageComponent';
     height: 100vh;
     flex-direction: column;
     overflow: hidden;
+    z-index: 0;
 }
 
 .search-area {
