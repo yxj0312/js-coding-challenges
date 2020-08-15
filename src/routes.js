@@ -1,6 +1,7 @@
 import VideoPlayer from './components/VideoPlayer'
 import AnimatedImageSearch from './components/AnimatedImageSearch'
 import ArrayAlgoChallenge from './components/ArrayAlgoChallenge'
+import JavaScriptManipulation from './components/JavaScriptManipulation'
 
 export default {
     mode: 'history',
@@ -19,6 +20,11 @@ export default {
         {
             path: '/challenge-11',
             component: ArrayAlgoChallenge
+        },
+
+        {
+            path: '/challenge-12',
+            component: JavaScriptManipulation
         },
     ]
 }

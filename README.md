@@ -58,3 +58,33 @@ Part 1 - Find the total age of male coders under 25
 Part 2 - List all male coders over 30
 
 Part 3 - Find the total age of everyone in texasss, newieyork and vegzas combined.
+
+## Code Challenges #12 - JavaScript String Manipulation
+
+In this challenge, we'll be solving five problems with possibly increased difficulty from first to last. The five problems are:
+
+- Padded Number
+
+In this challenge, an array is provided and stored in a variable, create a function which evaluates the strings in the array by adding a preceding 0 to single numbers (6 => 06, 5 => 05). Double figures remain as is.
+
+- Camel-to-Title
+
+Convert a given sentence from camel case to title case. Create a function which evaluates a given sentence argument in camel case and converts it to title case.
+
+- Title-to-Camel
+
+This the opposite of the last challenge, create a function which receives a string in title case as an argument and returns a converted version in camel case. Convert the given variable into a sentence with pairs of words in camel case. In cases where the word count is odd, leave the last word standing singularly.
+
+- Passage Counter
+
+This is a feature utilized by most blogs to calculate reading time. Create a function which calculates the time to read a text in seconds, if it takes over 60 seconds to read a passage return the time to minutes.
+
+- Pig Latin
+
+Quite an interesting challenge, convert any given word to Pig Latin. Create a function which receives an argument of a string and subsequently returns the Pig Latin version of it. Here's how to convert words to Pig Latin:
+
+    - In words that begin with consonant sounds, all letters before the initial vowel are placed at the end of the word sequence. Then, "ay" is added.
+
+    - When words begin with consonant clusters (multiple consonants that form one sound), the whole consonants before the vowel is added at the end followed by an "ay".
+
+    - In words that begin with vowel sounds, one just adds "ay" to the end.
