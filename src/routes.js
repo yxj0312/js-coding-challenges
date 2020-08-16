@@ -2,6 +2,7 @@ import VideoPlayer from './components/VideoPlayer'
 import AnimatedImageSearch from './components/AnimatedImageSearch'
 import ArrayAlgoChallenge from './components/ArrayAlgoChallenge'
 import JavaScriptManipulation from './components/JavaScriptManipulation'
+import LazyLoader from './components/LazyLoader'
 
 export default {
     mode: 'history',
@@ -25,6 +26,11 @@ export default {
         {
             path: '/challenge-12',
             component: JavaScriptManipulation
+        },
+
+        {
+            path: '/challenge-10',
+            component: LazyLoader
         },
     ]
 }

@@ -88,3 +88,15 @@ Quite an interesting challenge, convert any given word to Pig Latin. Create a fu
     - When words begin with consonant clusters (multiple consonants that form one sound), the whole consonants before the vowel is added at the end followed by an "ay".
 
     - In words that begin with vowel sounds, one just adds "ay" to the end.
+    
+## Code Challenges #10 - Lazy Load Animal Memes with Intersection Observer
+
+### Requirement
+
+Feel free to complete this challenge using any tool, technique, or technology. However, there is a single requirement for the challenge which is, once the application loads, we require only the images in the viewport to load, while the rest of the images not currently in the viewport loads upon entering the viewport.
+
+### Goals for this Challenge
+
+- Implement lazy loading on a page to reduce its load time and improve performance.
+
+- Understand DOM element manipulation using JavaScript.

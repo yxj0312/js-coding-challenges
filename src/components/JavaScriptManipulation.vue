@@ -24,21 +24,21 @@
     <p>Given</p>
     <p>{{wordsBeginWithConsonantSounds}}</p>
     <p>Pig Latin</p>
-    <div v-for="(word, index) in wordsBeginWithConsonantSounds" :index="`wordsBeginWithConsonantSounds-${index}`">
+    <div v-for="(word, index) in wordsBeginWithConsonantSounds" :key="`wordsBeginWithConsonantSounds-${index}`">
       <p>{{pigLatin(word)}}</p>
     </div>
 
     <p>Given</p>
     <p>{{wordsBeginWithConsonantClusters}}</p>
     <p>Pig Latin</p>
-    <div v-for="(word, index) in wordsBeginWithConsonantClusters" :index="`wordsBeginWithConsonantClusters-${index}`">
+    <div v-for="(word, index) in wordsBeginWithConsonantClusters" :key="`wordsBeginWithConsonantClusters-${index}`">
       <p>{{pigLatin(word)}}</p>
     </div>
 
     <p>Given</p>
     <p>{{wordsBeginWithVowelSounds}}</p>
     <p>Pig Latin</p>
-    <div v-for="(word, index) in wordsBeginWithVowelSounds" :index="`wordsBeginWithVowelSounds-${index}`">
+    <div v-for="(word, index) in wordsBeginWithVowelSounds" :key="`wordsBeginWithVowelSounds-${index}`">
       <p>{{pigLatin(word)}}</p>
     </div>
   </div>
