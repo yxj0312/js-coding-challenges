@@ -5,6 +5,11 @@ import App from './App.vue'
 import LazyLoadDirective from "./directives/LazyLoadDirective";
 import InViewDirective from "./directives/InViewDirective";
 import 'bulma/css/bulma.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret)
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false

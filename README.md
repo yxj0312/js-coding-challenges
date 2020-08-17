@@ -91,11 +91,11 @@ Quite an interesting challenge, convert any given word to Pig Latin. Create a fu
     
 ## Code Challenges #10 - Lazy Load Animal Memes with Intersection Observer
 
-### Requirement
+### Requirement #10
 
 Feel free to complete this challenge using any tool, technique, or technology. However, there is a single requirement for the challenge which is, once the application loads, we require only the images in the viewport to load, while the rest of the images not currently in the viewport loads upon entering the viewport.
 
-### Goals for this Challenge
+### Goals for this Challenge #10
 
 - Implement lazy loading on a page to reduce its load time and improve performance.
 
@@ -103,12 +103,24 @@ Feel free to complete this challenge using any tool, technique, or technology. H
 
 ## Code Challenges #9 - Build A Scroll-Spy Navbar
 
-### Requirement
+### Requirement #9
 
 Once a portion of the page is scrolled to, its corresponding navigation link on the navigation bar should be highlighted.
 
-### Goals for this challenge
+### Goals for this challenge #9
 
 - Implement scroll-spy on a page by tracking portions or elements in the page and highlighting the navbar.
 
 - Understand DOM traversing and manipulation.
+
+## Code Challenge #7 - Build An Avengers Off Canvas Sidebar
+
+### Requirement #7
+
+- The sidebar should slide in with the click of a button and also slide out with the click of the same button.
+
+- When the sidebar slides in, the content of the website should fit in completely on the screen and shouldn't overflow.
+
+- Control transition of the sidebar when the button is clicked.
+
+- Have loads of fun while completing this challenge.

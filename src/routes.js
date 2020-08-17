@@ -5,6 +5,7 @@ import JavaScriptManipulation from './components/JavaScriptManipulation'
 import LazyLoader from './components/LazyLoader'
 import ArticlesList from './components/ArticlesList'
 import ScrollSpyNavbar from './components/ScrollSpyNavbar'
+import OffCanvasSidebar from './components/OffCanvasSidebar'
 
 export default {
     mode: 'history',
@@ -43,6 +44,11 @@ export default {
         {
             path: '/challenge-9',
             component: ScrollSpyNavbar
+        },
+
+        {
+            path: '/challenge-7',
+            component: OffCanvasSidebar
         },
     ]
 }
