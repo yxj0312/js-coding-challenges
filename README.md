@@ -100,3 +100,15 @@ Feel free to complete this challenge using any tool, technique, or technology. H
 - Implement lazy loading on a page to reduce its load time and improve performance.
 
 - Understand DOM element manipulation using JavaScript.
+
+## Code Challenges #9 - Build A Scroll-Spy Navbar
+
+### Requirement
+
+Once a portion of the page is scrolled to, its corresponding navigation link on the navigation bar should be highlighted.
+
+### Goals for this challenge
+
+- Implement scroll-spy on a page by tracking portions or elements in the page and highlighting the navbar.
+
+- Understand DOM traversing and manipulation.

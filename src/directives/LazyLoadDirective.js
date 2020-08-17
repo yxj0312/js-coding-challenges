@@ -17,7 +17,6 @@ export default {
 
     function handleIntersect(entries, observer) {
       entries.forEach(entry => {
-          console.log(!entry.isIntersecting)
         if (!entry.isIntersecting) {
           return;
         } else {

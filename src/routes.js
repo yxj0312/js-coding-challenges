@@ -4,6 +4,7 @@ import ArrayAlgoChallenge from './components/ArrayAlgoChallenge'
 import JavaScriptManipulation from './components/JavaScriptManipulation'
 import LazyLoader from './components/LazyLoader'
 import ArticlesList from './components/ArticlesList'
+import ScrollSpyNavbar from './components/ScrollSpyNavbar'
 
 export default {
     mode: 'history',
@@ -37,6 +38,11 @@ export default {
         {
             path: '/challenge-10-2',
             component: ArticlesList
+        },
+
+        {
+            path: '/challenge-9',
+            component: ScrollSpyNavbar
         },
     ]
 }

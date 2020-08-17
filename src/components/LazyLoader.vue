@@ -71,8 +71,6 @@
 </template>
 
 <script>
-import 'bulma/css/bulma.css'
-
 export  default {
   data() {
     return  {
@@ -104,7 +102,6 @@ export  default {
 
     callbackFunction(entries, observer) {
       entries.forEach(entry => {
-        console.log(entry)
         if (entry.intersectionRatio > 0) {
           this.updateImage(entry.target)
           observer.unobserve(entry.target);
