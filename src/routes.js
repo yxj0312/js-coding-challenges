@@ -6,6 +6,7 @@ import LazyLoader from './components/LazyLoader'
 import ArticlesList from './components/ArticlesList'
 import ScrollSpyNavbar from './components/ScrollSpyNavbar'
 import OffCanvasSidebar from './components/OffCanvasSidebar'
+import VuexToDo from './components/VuexToDo'
 
 export default {
     mode: 'history',
@@ -49,6 +50,11 @@ export default {
         {
             path: '/challenge-7',
             component: OffCanvasSidebar
+        },
+
+        {
+            path: '/vuex-1',
+            component: VuexToDo
         },
     ]
 }
