@@ -3,6 +3,7 @@ import AnimatedImageSearch from './components/AnimatedImageSearch'
 import ArrayAlgoChallenge from './components/ArrayAlgoChallenge'
 import JavaScriptManipulation from './components/JavaScriptManipulation'
 import LazyLoader from './components/LazyLoader'
+import ArticlesList from './components/ArticlesList'
 
 export default {
     mode: 'history',
@@ -31,6 +32,11 @@ export default {
         {
             path: '/challenge-10',
             component: LazyLoader
+        },
+
+        {
+            path: '/challenge-10-2',
+            component: ArticlesList
         },
     ]
 }

@@ -104,8 +104,10 @@ export  default {
 
     callbackFunction(entries, observer) {
       entries.forEach(entry => {
-        if (entry.intersectionRatio === 0) {
+        console.log(entry)
+        if (entry.intersectionRatio > 0) {
           this.updateImage(entry.target)
+          observer.unobserve(entry.target);
         }
       })
     },
