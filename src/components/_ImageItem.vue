@@ -35,13 +35,17 @@ import ImageSpinner from "./_ImageSpinner";
     align-items: center;
     border-radius: 4px;
 
+    img {
+      width: 50%;
+    }
+
     &.loaded {
       .image {
-        //&__item {
-        //  visibility: visible;
-        //  opacity: 1;
-        //  border: 0;
-        //}
+        &__item {
+          visibility: visible;
+          opacity: 1;
+          border: 0;
+        }
 
         &__spinner {
           display: none;
@@ -55,8 +59,8 @@ import ImageSpinner from "./_ImageSpinner";
     width: 100%;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
-    //opacity: 0;
-    //visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
