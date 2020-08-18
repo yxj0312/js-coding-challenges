@@ -126,3 +126,5 @@ Once a portion of the page is scrolled to, its corresponding navigation link on 
 - Have loads of fun while completing this challenge.
 
 ### Code Challenge #2 - Build a Calculator with CSS Grid
+
+### Code Challenge #6 - Build A Pomodoro Timer

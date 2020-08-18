@@ -8,6 +8,7 @@ import ScrollSpyNavbar from './components/ScrollSpyNavbar'
 import OffCanvasSidebar from './components/OffCanvasSidebar'
 import VuexToDo from './components/VuexToDo'
 import Calculator from './components/Calculator'
+import PomodoroTimer from './components/PomodoroTimer'
 
 export default {
     mode: 'history',
@@ -61,6 +62,11 @@ export default {
         {
             path: '/challenge-2',
             component: Calculator
+        },
+
+        {
+            path: '/challenge-6',
+            component: PomodoroTimer
         },
     ]
 }
