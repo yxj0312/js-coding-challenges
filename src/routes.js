@@ -7,6 +7,7 @@ import ArticlesList from './components/ArticlesList'
 import ScrollSpyNavbar from './components/ScrollSpyNavbar'
 import OffCanvasSidebar from './components/OffCanvasSidebar'
 import VuexToDo from './components/VuexToDo'
+import Calculator from './components/Calculator'
 
 export default {
     mode: 'history',
@@ -55,6 +56,11 @@ export default {
         {
             path: '/vuex-1',
             component: VuexToDo
+        },
+
+        {
+            path: '/challenge-2',
+            component: Calculator
         },
     ]
 }

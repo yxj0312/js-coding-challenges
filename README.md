@@ -124,3 +124,5 @@ Once a portion of the page is scrolled to, its corresponding navigation link on 
 - Control transition of the sidebar when the button is clicked.
 
 - Have loads of fun while completing this challenge.
+
+### Code Challenge #2 - Build a Calculator with CSS Grid
