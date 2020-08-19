@@ -20,7 +20,9 @@
         <!--  START BUTTON    -->
         <button
           id="start"
-          class="button is-dark is-large">
+          class="button is-dark is-large"
+          v-if="!timer"
+          @click="startTimer">
             <i class="far fa-play-circle"></i>
         </button>
 
@@ -61,6 +63,10 @@ export default {
     minutes() {
       const minutes = Math.floor(this.totalTime / 60);
       return this.padTime(minutes);
+    },
+    seconds() {
+      const seconds = this.totalTime - (this.minutes * 60);
+      return this.padTime(seconds);
     }
   },
 
