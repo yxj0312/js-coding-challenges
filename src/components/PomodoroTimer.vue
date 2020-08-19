@@ -5,13 +5,13 @@
     <div class="hero-body">
     <div class="container has-text-centered">
 
-      <h2 class="title is-6">Let the countdown begin!!</h2>
+      <h2 class="title is-6">{{ title }}</h2>
 
         <!--  THE TIMER NUMBERS  -->
       <div id="timer">
-        <span id="minutes">25</span>
+        <span id="minutes">{{ minutes }}</span>
         <span id="middle">:</span>
-        <span id="seconds">00</span>
+        <span id="seconds">{{ seconds }}</span>
       </div>
 
       <!--  THE BUTTONS  -->
@@ -44,6 +44,48 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'PomodoroTimer',
+  data() {
+    return {
+      title: "Let the countdown begin!!",
+      timer: null,
+      resetButton: false,
+      totalTime: (25 * 60)
+    };
+  },
+
+  computed: {
+    minutes() {
+      const minutes = Math.floor(this.totalTime / 60);
+      return this.padTime(minutes);
+    }
+  },
+
+  methods: {
+    padTime(time) {
+      return (time < 10 ? '0' : '') + time;
+    },
+
+    countdown() {
+      if (this.totalTime >= 1) {
+        this.totalTime--;
+      } else {
+        this.totalTime = 0;
+      }
+    },
+
+    startTimer() {
+      this.timer = setInterval(()=>this.countdown(), 1000);
+      this.resetButton = true;
+      this.title = "Greatness is within sight!!"
+    }
+  }
+
+}
+</script>
 
 <style lang="scss">
 #message {
