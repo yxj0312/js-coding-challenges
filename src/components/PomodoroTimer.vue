@@ -29,14 +29,20 @@
         <!--   PAUSE BUTTON   -->
         <button
           id="stop"
-          class="button is-dark is-large">
+          class="button is-dark is-large"
+          v-if="timer"
+          @click="stopTimer"
+        >
             <i class="far fa-pause-circle"></i>
         </button>
 
         <!--  RESET BUTTON   -->
         <button
           id="reset"
-          class="button is-dark is-large">
+          class="button is-dark is-large"
+          v-if="resetButton"
+          @click="resetTimer"
+        >
             <i class="fas fa-undo"></i>
         </button>
       </div>
@@ -87,6 +93,20 @@ export default {
       this.timer = setInterval(()=>this.countdown(), 1000);
       this.resetButton = true;
       this.title = "Greatness is within sight!!"
+    },
+
+    stopTimer() {
+      clearInterval(this.timer);
+      this.timer = null;
+      this.resetButton = true;
+      this.title="Never quit, keep going!!"
+    },
+
+    resetTimer() {
+      this.totalTime = (25 * 60);
+      clearInterval(this.timer);
+      this.resetButton = false;
+      this.title = "Let the countdown begin!!"
     }
   }
 
